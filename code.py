@@ -25,8 +25,6 @@ file_name = tomorrow_str+".pdf"
 
 qr_urls = [url for _, url in story_details]
 
-create_pdf(tomorrow_str,  qr_urls, story_details)
-
 
 
 
@@ -59,6 +57,8 @@ def create_pdf(tomorrow_str , qr_urls, story_details):
         y_position -= paragraph_height + 120  # increase space for the next detail
     c.save()
 
+
+create_pdf(tomorrow_str,  qr_urls, story_details)
 
 
 
