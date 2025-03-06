@@ -37,7 +37,7 @@ def create_pdf(tomorrow_str , qr_urls, story_details):
     c.setFont("Helvetica-Bold", 26)
     c.drawString(100, height - 30, "The Daily Droplet")
     c.setFont("Helvetica-Bold", 18)
-    c.drawString(150, height - 50, tomorrow_str )
+    c.drawString(150, height - 60, tomorrow_str )
     styles = getSampleStyleSheet()
     normal_style = styles['Normal']
     normal_style.fontSize = 22 # Set font size to a larger value
